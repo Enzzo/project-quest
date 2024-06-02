@@ -1,0 +1,1 @@
+{"title":"Квест №1","currentView":{"question":"Выбери правильный ответ:","answers":[{"answer":"Левая","nextView":{"question":"Правильно","answers":[],"type":"WIN"}},{"answer":"Правая","nextView":{"question":"Не правильно","answers":[],"type":"LOSE"}}],"type":"NEXT"}}
