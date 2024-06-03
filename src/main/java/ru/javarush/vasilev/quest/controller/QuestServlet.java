@@ -18,14 +18,21 @@ import javax.servlet.annotation.*;
 @WebServlet(name = "QuestServlet", value = "/quest")
 public class QuestServlet extends HttpServlet {
     private QuestService questService = new QuestService();
+    private SessionInfo session = new SessionInfo();
 
     public void init() {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        System.out.println(getClientIpAddr(request));
+        String name = request.getParameter("name");
+
+        if(!StringUtils.isBlank(name)) {
+            session.setUserName(name);
+        }
+
         String param = request.getParameter("game");
         String idx = request.getParameter("idx");
-        String name = request.getParameter("name");
 
         if(StringUtils.equals(param, "start")){
             questService.load(0);
@@ -43,7 +50,6 @@ public class QuestServlet extends HttpServlet {
         List<Answer> answers = questService.getAnswers();
         request.setAttribute("answers", answers);
 
-        System.out.println(name);
         getServletContext().getRequestDispatcher("/game.jsp").forward(request, response);
     }
 
@@ -64,5 +70,25 @@ public class QuestServlet extends HttpServlet {
         }catch(IOException e){
             e.printStackTrace();
         }
+    }
+
+    public static String getClientIpAddr(HttpServletRequest request) {
+        String ip = request.getHeader("X-Forwarded-For");
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("WL-Proxy-Client-IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("HTTP_CLIENT_IP");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getHeader("HTTP_X_FORWARDED_FOR");
+        }
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+            ip = request.getRemoteAddr();
+        }
+        return ip;
     }
 }

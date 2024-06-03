@@ -10,24 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7840f-d024-40e7-af9c-099d78dc5929" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/Quest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/QuestionView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/SessionInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/ViewType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/rawtest/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/service/QuestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/json/base-quest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/json/default-game.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/json/quest01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/json/quest02.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/SessionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/SessionInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,20 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 9.0.89.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.89.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.89" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.89" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -184,6 +170,7 @@
       <updated>1717412767012</updated>
       <workItem from="1717412768006" duration="59000" />
       <workItem from="1717412848757" duration="677000" />
+      <workItem from="1717415260029" duration="2544000" />
     </task>
     <servers />
   </component>

@@ -4,8 +4,6 @@ $(document).ready(function(){
     })
     $("#sendButton").on("click", function(){
         let name = $("#nameField").val();
-        console.log("asdfasdfasdf");
-        console.log(name);
         window.location="quest?name=" +name;
     })
 })
