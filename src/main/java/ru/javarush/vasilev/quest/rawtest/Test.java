@@ -50,7 +50,7 @@ public class Test {
 //        Scanner scanner = new Scanner(System.in);
 //        ObjectMapper mapper = new ObjectMapper();
 //        QuestionView view = new QuestionView();
-//        try(FileReader fr = new FileReader("src/main/resources/json/out.json")) {
+//        try(FileReader fr = new FileReader("src/main/resources/json/quest02.json")) {
 //            Quest quest2 = new Quest();
 //            String file = fr.toString();
 //            quest2 = mapper.readValue(fr, Quest.class);

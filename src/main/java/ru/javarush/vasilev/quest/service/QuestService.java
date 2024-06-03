@@ -15,6 +15,10 @@ public class QuestService {
             currentView = QuestsRepository.getInstance().getQuestSourceById(id).getCurrentView();
     }
 
+    public String getTitle(){
+        return quest.getTitle();
+    }
+
     //  TODO: отправить текст текущего вопроса
     public String getText(){
         return currentView.getQuestion();

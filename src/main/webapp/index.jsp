@@ -9,17 +9,12 @@
     <script type="text/javascript", src="my.js"></script>
   </head>
   <body>
-  <div class="container-fluid p-5 bg-primary text-white text-center">
-    <h1><%= "Quest Project" %></h1>
-    <section id="gameSection">
-      <h2>${text}</h2>
-      <c:forEach var="ans" items="${answers}" varStatus="loop">
-        <p onclick="select(${loop.index})">${ans.getAnswer()}</p>
-      </c:forEach>
-    </section>
-    <br/>
-    <input id="beginButton" type="button" value="Начать новую игру" onclick="load()"/>
-    <input id="createButton" type="button" value="Создать свою игру" onclick=window.location="quest?game=create" />
+  <div>
+    <form id="sendName">
+      <label for="nameField">Введите имя:</label><br>
+      <input type="text" id="nameField" name="nameField" placeholder="Имя"><br>
+      <input type="button" id="sendButton" value="Продолжить">
+    </form>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

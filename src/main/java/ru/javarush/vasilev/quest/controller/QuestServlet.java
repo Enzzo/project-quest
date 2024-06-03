@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import ru.javarush.vasilev.quest.entity.Answer;
+import ru.javarush.vasilev.quest.entity.SessionInfo;
 import ru.javarush.vasilev.quest.service.QuestService;
 
 import java.io.*;
@@ -24,6 +25,7 @@ public class QuestServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String param = request.getParameter("game");
         String idx = request.getParameter("idx");
+        String name = request.getParameter("name");
 
         if(StringUtils.equals(param, "start")){
             questService.load(0);
@@ -32,13 +34,17 @@ public class QuestServlet extends HttpServlet {
             questService.setNextQuestion(Integer.parseInt(idx));
         }
 
+        String title = questService.getTitle();
+        request.setAttribute("title", title);
+
         String text = questService.getText();
         request.setAttribute("text", text);
 
         List<Answer> answers = questService.getAnswers();
         request.setAttribute("answers", answers);
 
-        getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+        System.out.println(name);
+        getServletContext().getRequestDispatcher("/game.jsp").forward(request, response);
     }
 
     @Override
@@ -47,9 +53,16 @@ public class QuestServlet extends HttpServlet {
     }
 
     public void destroy() {
-        File f = new File("stat.json");
-        String path = getServletContext().getResource("/");
+        ClassLoader loader = Thread.currentThread().getContextClassLoader();
+        File file = new File(loader.getResource(".").getFile() + "/status.json");
+        ObjectMapper mapper = new ObjectMapper();
+        SessionInfo test = new SessionInfo();
+        test.setUserName("username");
 
-        System.out.println("absolute path: "+ path);
+        try(FileWriter writer = new FileWriter("/status.json")){
+            mapper.writeValue(writer, test);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 }
