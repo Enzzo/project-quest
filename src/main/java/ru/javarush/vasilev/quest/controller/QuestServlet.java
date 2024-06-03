@@ -1,5 +1,6 @@
 package ru.javarush.vasilev.quest.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -46,5 +47,9 @@ public class QuestServlet extends HttpServlet {
     }
 
     public void destroy() {
+        File f = new File("stat.json");
+        String path = getServletContext().getResource("/");
+
+        System.out.println("absolute path: "+ path);
     }
 }
