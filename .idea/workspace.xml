@@ -11,9 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1b7840f-d024-40e7-af9c-099d78dc5929" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/json/quest05.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/json/quest05.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +209,7 @@
       <workItem from="1717480275852" duration="451000" />
       <workItem from="1717480825244" duration="496000" />
       <workItem from="1717481372921" duration="2323000" />
-      <workItem from="1717485338179" duration="424000" />
+      <workItem from="1717485338179" duration="2427000" />
     </task>
     <servers />
   </component>

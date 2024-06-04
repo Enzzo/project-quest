@@ -8,9 +8,9 @@ $(document).ready(function(){
     })
 })
 
-function startNewGame(){
+function restart(){
     //window.location="quest?game=start";
-    window.location="index.jsp"
+    window.location="quest?game=start"
 }
 
 function select(idx){
