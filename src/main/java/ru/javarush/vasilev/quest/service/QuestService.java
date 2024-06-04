@@ -3,6 +3,7 @@ package ru.javarush.vasilev.quest.service;
 import ru.javarush.vasilev.quest.entity.Answer;
 import ru.javarush.vasilev.quest.entity.Quest;
 import ru.javarush.vasilev.quest.entity.QuestionView;
+import ru.javarush.vasilev.quest.entity.ViewType;
 import ru.javarush.vasilev.quest.repository.QuestsRepository;
 
 import java.util.List;
@@ -22,6 +23,18 @@ public class QuestService {
     //  TODO: отправить текст текущего вопроса
     public String getText(){
         return currentView.getQuestion();
+    }
+
+    public String getType(){
+        // TODO: пока всегда возвращает win:
+        return "win";
+//        ViewType type = currentView.getType();
+//        switch(type){
+//            case WIN: return "win";
+//            case LOSE: return "lose";
+//            case NEXT: return "next";
+//            default: return "";
+//        }
     }
 
     //  TODO: отправить список текущего вопроса

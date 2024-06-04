@@ -8,7 +8,7 @@ $(document).ready(function(){
     })
 })
 
-function load(){
+function startNewGame(){
     //window.location="quest?game=start";
     window.location="index.jsp"
 }

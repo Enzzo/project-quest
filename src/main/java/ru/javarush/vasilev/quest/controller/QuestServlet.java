@@ -47,6 +47,11 @@ public class QuestServlet extends HttpServlet {
         String text = questService.getText();
         request.setAttribute("text", text);
 
+        String state = questService.getType();
+        if(StringUtils.equalsAny(state, "win", "lose")){
+            request.setAttribute("state", state);
+        }
+
         List<Answer> answers = questService.getAnswers();
         request.setAttribute("answers", answers);
 
