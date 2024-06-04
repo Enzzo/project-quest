@@ -8,8 +8,8 @@
     <title>Prologue</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body>
-  <div class="container-fluid p-5 bg-primary text-white text-center">
+  <body class="container-fluid p-5 bg-primary text-white text-center">
+  <div >
     <h1><%= "Quest Project" %></h1>
     <p>
       <h2>Пролог</h2>Ты стоишь в космическом порту и готов подняться на бортсвоего корабля. Разве ты не об этом мечтал? Стать капитаномгалактического судна с экипажем, который будет совершатьподвиги под твоим командованием. Так что вперёд!
@@ -20,7 +20,7 @@
     <form id="sendName">
       <label for="nameField">Введите имя:</label><br>
       <input type="text" id="nameField" name="nameField" placeholder="Имя"><br>
-      <input type="button" id="startButton" value="Продолжить">
+      <button type="button" id="startButton" class="btn btn-success">Начать</button>
     </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

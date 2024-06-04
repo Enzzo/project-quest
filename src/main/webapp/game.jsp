@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<div class="container-fluid p-5 bg-primary text-white text-center">
+<body class="container-fluid p-5 bg-primary text-white text-center">
+<div>
   <section id="gameSection">
     <h2>${title}</h2>
     <p>${text}</p>
