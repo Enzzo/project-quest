@@ -1,0 +1,1 @@
+{"title":"Квест","currentView":{"question":"Ты потерял память.<br>Принять вызов НЛО?","answers":[{"answer":"Отклонить вызов","nextView":{"question":"Ты отклонил вызов.<br>Поражение","answers":[],"type":"LOSE"}},{"answer":"Принять вызов","nextView":{"question":"Ты принял вызов.<br>Поднимешься на мостик к капитану?","answers":[],"type":"LOSE"}}],"type":"NEXT"}}

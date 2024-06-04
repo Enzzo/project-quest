@@ -16,33 +16,33 @@ public class GameEngine {
         Quest quest = new Quest();
 
         QuestionView view1 = new QuestionView();
-        view1.setQuestion("Выбери правильный ответ:");
+        view1.setQuestion("Ты потерял память.<br>Принять вызов НЛО?");
         view1.setType(ViewType.NEXT);
 
         QuestionView view2 = new QuestionView();
-        view2.setQuestion("Правильно");
-        view2.setType(ViewType.WIN);
+        view2.setQuestion("Ты отклонил вызов.<br>Поражение");
+        view2.setType(ViewType.LOSE);
 
-        Answer left = new Answer();
-        left.setAnswer("Левая");
-        left.setNextView(view2);
+        Answer ans1 = new Answer();
+        ans1.setAnswer("Отклонить вызов");
+        ans1.setNextView(view2);
 
         QuestionView view3 = new QuestionView();
-        view3.setQuestion("Не правильно");
-        view3.setType(ViewType.LOSE);
+        view3.setQuestion("Ты принял вызов.<br>Поднимешься на мостик к капитану?");
+        view3.setType(ViewType.NEXT);
 
-        Answer right = new Answer();
-        right.setAnswer("Правая");
-        right.setNextView(view3);
+        Answer ans2 = new Answer();
+        ans2.setAnswer("Принять вызов");
+        ans2.setNextView(view3);
 
         List<Answer> answers = new ArrayList<>();
-        answers.add(left);
-        answers.add(right);
+        answers.add(ans1);
+        answers.add(ans2);
 
         view1.setAnswers(answers);
         quest.setCurrentView(view1);
 
-        try(FileWriter writer = new FileWriter("src/main/resources/json/quest04.json")){
+        try(FileWriter writer = new FileWriter("src/main/resources/json/quest05.json")){
             mapper.writeValue(writer, quest);
         }
     }

@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7840f-d024-40e7-af9c-099d78dc5929" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/service/QuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/service/QuestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,6 +208,7 @@
       <workItem from="1717464857855" duration="1711000" />
       <workItem from="1717469892271" duration="2045000" />
       <workItem from="1717480275852" duration="451000" />
+      <workItem from="1717480825244" duration="496000" />
     </task>
     <servers />
   </component>

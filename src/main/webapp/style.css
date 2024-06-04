@@ -1,0 +1,9 @@
+.answers{
+    width: 300px;
+    background-color: darkblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.answers:hover{
+    cursor:pointer;
+}
