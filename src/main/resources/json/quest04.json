@@ -1,1 +1,1 @@
-{"title":"Квест","currentView":{"question":"Выбери правильный ответ:","answers":[{"answer":"Левая","nextView":{"question":"Правильно","answers":[],"type":"WIN"}},{"answer":"Правая","nextView":{"question":"Не правильно","answers":[],"type":"LOSE"}}],"type":"NEXT"}}
+{"title":"Квест","currentView":{"question":"Выбери правильный ответ:","answers":[{"answer":"Победю","nextView":{"question":"Правильно","answers":[],"type":"WIN"}},{"answer":"Не победю","nextView":{"question":"Не правильно","answers":[],"type":"LOSE"}}],"type":"NEXT"}}
