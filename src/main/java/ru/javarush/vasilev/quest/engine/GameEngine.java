@@ -10,6 +10,10 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Этот класс пока работает в ручном режиме для создания квестов
+ * Во время работы приложения он нигде не используется (пока)
+ */
 public class GameEngine {
     public static void main(String[] args) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
@@ -75,7 +79,7 @@ public class GameEngine {
 
         Answer ans6 = new Answer();
         ans6.setAnswer("Солгать о себе");
-        ans6.setNextView(view4);
+        ans6.setNextView(view7);
 
 
         List<Answer> answers5 = new ArrayList<>();
@@ -84,7 +88,6 @@ public class GameEngine {
         view4.setAnswers(answers5);
 
         quest.setCurrentView(view1);
-        int x = 2;
         try(FileWriter writer = new FileWriter("src/main/resources/json/quest05.json")){
             mapper.writerWithDefaultPrettyPrinter().writeValue(writer, quest);
         }

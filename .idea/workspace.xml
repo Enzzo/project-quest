@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="project-quest:war exploded" />
+      <artifact name="quest:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/repository/QuestsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/json/quest04.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/json/quest04.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/json/quest05.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/json/quest05.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.GameEngine.executor": "Debug",
+    "Application.GameEngine.executor": "Run",
     "Application.Test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -71,10 +70,10 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.GameEngine">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.89">
     <configuration name="GameEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.javarush.vasilev.quest.engine.GameEngine" />
-      <module name="project-quest" />
+      <module name="quest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.javarush.vasilev.quest.engine.*" />
@@ -88,7 +87,7 @@
     <configuration name="Tomcat 9.0.89" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.89" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="project-quest:war exploded">
+        <artifact name="quest:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -168,7 +167,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="project-quest:war exploded" />
           <artifact name="quest:war exploded" />
         </option>
       </method>
@@ -186,8 +184,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-77ac15d44862-intellij.indexing.shared.core-IU-242.10180.25" />
+        <option value="bundled-js-predefined-1d06a55b98c1-cb551a44b0f8-JavaScript-IU-242.10180.25" />
       </set>
     </attachedChunks>
   </component>
@@ -210,21 +208,11 @@
       <workItem from="1717480275852" duration="451000" />
       <workItem from="1717480825244" duration="496000" />
       <workItem from="1717481372921" duration="2323000" />
+      <workItem from="1717485338179" duration="424000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/engine/GameEngine.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
