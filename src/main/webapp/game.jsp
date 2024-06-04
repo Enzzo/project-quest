@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+  <title>Quest</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript", src="my.js"></script>
@@ -19,9 +19,8 @@
     </c:forEach>
   </section>
   <br/>
-  <c:set var="state" value="${state}" />
 
-  <c:if test="${state==win}">
+  <c:if test="${state=='win'}">
     <input id="restartButton" type="button" value="Начать новую игру" onclick="startNewGame()"/>
     <%-- <input id="createButton" type="button" value="Создать свою игру" onclick=window.location="quest?game=create" /> --%>
   </c:if>
