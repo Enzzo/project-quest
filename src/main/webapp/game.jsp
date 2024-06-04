@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1><%= "Quest Project" %></h1>
+
   <section id="gameSection">
     <h2>${title}</h2>
     <p>${text}</p>
@@ -25,7 +25,13 @@
     <input id="restartButton" type="button" value="Начать новую игру" onclick="restart()"/>
     <%-- <input id="createButton" type="button" value="Создать свою игру" onclick=window.location="quest?game=create" /> --%>
   </c:if>
+  <input id="exittButton" type="button" value="Выйти из игры" onclick="closeGame()"/>
 </div>
+<footer>
+  ${session.userName}<br>
+  ${session.IP}<br>
+  ${session.wins} | ${session.loses}
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

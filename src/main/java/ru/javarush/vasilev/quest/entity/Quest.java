@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
  */
 @JsonAutoDetect
 public class Quest {
-    private String title = "Квест";
+    private String title = null;
     private QuestionView currentView = null;
 
     public String getTitle() {

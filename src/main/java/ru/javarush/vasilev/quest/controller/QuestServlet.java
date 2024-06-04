@@ -1,15 +1,12 @@
 package ru.javarush.vasilev.quest.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import ru.javarush.vasilev.quest.entity.Answer;
-import ru.javarush.vasilev.quest.entity.SessionInfo;
+import ru.javarush.vasilev.quest.entity.SessionStats;
 import ru.javarush.vasilev.quest.service.QuestService;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -18,21 +15,21 @@ import javax.servlet.annotation.*;
 @WebServlet(name = "QuestServlet", value = "/quest")
 public class QuestServlet extends HttpServlet {
     private QuestService questService = new QuestService();
-    private SessionInfo session = new SessionInfo();
+    private SessionStats session = new SessionStats();
 
     public void init() {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        System.out.println(getClientIpAddr(request));
         String name = request.getParameter("name");
+        String param = request.getParameter("game");
+        String idx = request.getParameter("idx");
+        String invalidate = request.getParameter("invalidate");
 
         if(!StringUtils.isBlank(name)) {
             session.setUserName(name);
         }
-
-        String param = request.getParameter("game");
-        String idx = request.getParameter("idx");
+        session.setIP(getClientIpAddr(request));
 
         if(StringUtils.equals(param, "start")){
             questService.load(0);
@@ -48,12 +45,19 @@ public class QuestServlet extends HttpServlet {
         request.setAttribute("text", text);
 
         String state = questService.getType();
-        if(StringUtils.equalsAny(state, "win", "lose")){
+        if(StringUtils.equals(state, "win")){
+            session.win();
+            request.setAttribute("state", "game over");
+        }
+        else if(StringUtils.equals(state, "lose")){
+            session.lose();
             request.setAttribute("state", "game over");
         }
 
         List<Answer> answers = questService.getAnswers();
         request.setAttribute("answers", answers);
+
+        request.setAttribute("session", session);
 
         getServletContext().getRequestDispatcher("/game.jsp").forward(request, response);
     }
@@ -64,20 +68,9 @@ public class QuestServlet extends HttpServlet {
     }
 
     public void destroy() {
-        ClassLoader loader = Thread.currentThread().getContextClassLoader();
-        File file = new File(loader.getResource(".").getFile() + "/status.json");
-        ObjectMapper mapper = new ObjectMapper();
-        SessionInfo test = new SessionInfo();
-        test.setUserName("username");
-
-        try(FileWriter writer = new FileWriter("/status.json")){
-            mapper.writeValue(writer, test);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
     }
 
-    public static String getClientIpAddr(HttpServletRequest request) {
+    private static String getClientIpAddr(HttpServletRequest request) {
         String ip = request.getHeader("X-Forwarded-For");
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeader("Proxy-Client-IP");

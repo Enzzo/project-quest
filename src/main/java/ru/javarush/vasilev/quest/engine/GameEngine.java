@@ -87,8 +87,9 @@ public class GameEngine {
         answers5.add(ans6);
         view4.setAnswers(answers5);
 
+        quest.setTitle("Квест #1");
         quest.setCurrentView(view1);
-        try(FileWriter writer = new FileWriter("src/main/resources/json/quest05.json")){
+        try(FileWriter writer = new FileWriter("src/main/resources/json/quest01.json")){
             mapper.writerWithDefaultPrettyPrinter().writeValue(writer, quest);
         }
     }

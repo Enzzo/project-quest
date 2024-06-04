@@ -16,3 +16,7 @@ function restart(){
 function select(idx){
     window.location="quest?idx="+idx;
 }
+
+function closeGame(){
+    window.location="index.jsp";
+}
