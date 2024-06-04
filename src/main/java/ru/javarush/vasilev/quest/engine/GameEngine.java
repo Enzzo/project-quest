@@ -92,5 +92,11 @@ public class GameEngine {
         try(FileWriter writer = new FileWriter("src/main/resources/json/quest01.json")){
             mapper.writerWithDefaultPrettyPrinter().writeValue(writer, quest);
         }
+
+        Quest quest2 = new Quest();
+        try(FileReader reader = new FileReader("src/main/resources/json/quest01.json")){
+            quest2 = mapper.readValue(reader, Quest.class);
+            int kx =1;
+        }
     }
 }

@@ -13,7 +13,8 @@ public class QuestService {
     private QuestionView currentView = new QuestionView();
 
     public void load(Integer id){
-            currentView = QuestsRepository.getInstance().getQuestSourceById(id).getCurrentView();
+            quest = QuestsRepository.getInstance().getQuestSourceById(id);
+            currentView = quest.getCurrentView();
     }
 
     public String getTitle(){
