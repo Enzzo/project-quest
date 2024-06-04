@@ -14,18 +14,6 @@ public class GameEngine {
     public static void main(String[] args) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         Quest quest = new Quest();
-        String prologue = "<div><h2>Пролог</h2>" +
-                "<p>Ты стоишь в космическом порту и готов подняться на борт" +
-                "своего корабля. Разве ты не об этом мечтал? Стать капитаном" +
-                "галактического судна с экипажем, который будет совершать" +
-                "подвиги под твоим командованием." +
-                "Так что вперёд!</p></div>" +
-                "<div><h2>Знакомство с экипажем</h2><p>" +
-                "Когда ты поднялся на борт корабля, тепя поприветствовала девушка с чёрной папкой в руках:<br>" +
-                "- Здравствууйте, командир! я Зинаида - ваша помощница. Видите? Там в углу пьёт кофе" +
-                "наш штурман - сержант Перегарный Шлейф, под штурвалом спит наш бортмеханик - Чёрный Богдан," +
-                "А как обращаться к вам?</p></div>";
-        quest.setTitle(prologue);
 
         QuestionView view1 = new QuestionView();
         view1.setQuestion("Выбери правильный ответ:");
@@ -54,7 +42,7 @@ public class GameEngine {
         view1.setAnswers(answers);
         quest.setCurrentView(view1);
 
-        try(FileWriter writer = new FileWriter("src/main/resources/json/quest03.json")){
+        try(FileWriter writer = new FileWriter("src/main/resources/json/quest04.json")){
             mapper.writeValue(writer, quest);
         }
     }

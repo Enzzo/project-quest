@@ -15,7 +15,7 @@ public class QuestsRepository {
     private QuestsRepository() {
         try {
             ClassLoader loader = Thread.currentThread().getContextClassLoader();
-            InputStream stream = loader.getResourceAsStream("/json/quest02.json");
+            InputStream stream = loader.getResourceAsStream("/json/quest04.json");
             StringReader reader = new StringReader(IOUtils.toString(stream, Charset.defaultCharset()));
             ObjectMapper mapper = new ObjectMapper();
             Quest src = mapper.readValue(reader, Quest.class);
@@ -34,6 +34,7 @@ public class QuestsRepository {
     public Quest getQuestSourceById(Integer id){
         return quests.get(id);
     }
+
     public void putQuestSource(Quest source){
         quests.put(quests.size(), source);
     }

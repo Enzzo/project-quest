@@ -26,15 +26,14 @@ public class QuestService {
     }
 
     public String getType(){
-        // TODO: пока всегда возвращает win:
-        return "win";
-//        ViewType type = currentView.getType();
-//        switch(type){
-//            case WIN: return "win";
-//            case LOSE: return "lose";
-//            case NEXT: return "next";
-//            default: return "";
-//        }
+
+        ViewType type = currentView.getType();
+        switch(type){
+            case WIN: return "win";
+            case LOSE: return "lose";
+            case NEXT: return "next";
+            default: return "";
+        }
     }
 
     //  TODO: отправить список текущего вопроса

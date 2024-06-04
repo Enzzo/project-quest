@@ -20,7 +20,7 @@
   </section>
   <br/>
 
-  <c:if test="${state=='win'}">
+  <c:if test="${state=='game over'}">
     <input id="restartButton" type="button" value="Начать новую игру" onclick="startNewGame()"/>
     <%-- <input id="createButton" type="button" value="Создать свою игру" onclick=window.location="quest?game=create" /> --%>
   </c:if>

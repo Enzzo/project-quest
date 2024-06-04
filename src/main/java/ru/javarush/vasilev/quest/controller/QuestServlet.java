@@ -49,7 +49,7 @@ public class QuestServlet extends HttpServlet {
 
         String state = questService.getType();
         if(StringUtils.equalsAny(state, "win", "lose")){
-            request.setAttribute("state", state);
+            request.setAttribute("state", "game over");
         }
 
         List<Answer> answers = questService.getAnswers();
