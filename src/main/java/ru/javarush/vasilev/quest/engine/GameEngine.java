@@ -1,4 +1,4 @@
-package ru.javarush.vasilev.quest.rawtest;
+package ru.javarush.vasilev.quest.engine;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import ru.javarush.vasilev.quest.entity.Answer;
@@ -9,9 +9,8 @@ import ru.javarush.vasilev.quest.entity.ViewType;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class Test {
+public class GameEngine {
     public static void main(String[] args) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         Quest quest = new Quest();
@@ -58,20 +57,5 @@ public class Test {
         try(FileWriter writer = new FileWriter("src/main/resources/json/quest03.json")){
             mapper.writeValue(writer, quest);
         }
-//        Scanner scanner = new Scanner(System.in);
-//        ObjectMapper mapper = new ObjectMapper();
-//        QuestionView view = new QuestionView();
-//        try(FileReader fr = new FileReader("src/main/resources/json/quest02.json")) {
-//            Quest quest2 = new Quest();
-//            String file = fr.toString();
-//            quest2 = mapper.readValue(fr, Quest.class);
-//            try(StringWriter sw = new StringWriter()) {
-//                mapper.writeValue(sw, quest2);
-//                String test = sw.getBuffer().toString();
-//                String correctString = new String(sw.getBuffer().toString().replaceAll("\"", "\\\""));
-//                System.out.println(sw.toString());
-//            }
-//            view = quest2.getCurrentView();
-//        }
     }
 }

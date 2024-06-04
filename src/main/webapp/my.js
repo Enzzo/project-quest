@@ -1,15 +1,16 @@
 $(document).ready(function(){
-    $("#beginButton").on("click", function(){
+    $("#restartButton").on("click", function(){
         load();
     })
-    $("#sendButton").on("click", function(){
+    $("#startButton").on("click", function(){
         let name = $("#nameField").val();
-        window.location="quest?name=" +name;
+        window.location="quest?name=" +name+"&game=start";
     })
 })
 
 function load(){
-    window.location="quest?game=start";
+    //window.location="quest?game=start";
+    window.location="index.jsp"
 }
 
 function select(idx){

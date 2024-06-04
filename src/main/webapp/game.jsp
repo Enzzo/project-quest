@@ -19,8 +19,11 @@
     </c:forEach>
   </section>
   <br/>
-  <input id="beginButton" type="button" value="Начать новую игру" onclick="load()"/>
-  <%-- <input id="createButton" type="button" value="Создать свою игру" onclick=window.location="quest?game=create" /> --%>
+  <c:set var="state" value="${state}" />
+  <c:if test="state==win || state==lose">
+    <input id="restartButton" type="button" value="Начать новую игру" onclick="load()"/>
+    <%-- <input id="createButton" type="button" value="Создать свою игру" onclick=window.location="quest?game=create" /> --%>
+  </c:if>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
