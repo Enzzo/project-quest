@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b7840f-d024-40e7-af9c-099d78dc5929" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/javarush/vasilev/quest/controller/QuestServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/QuestionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/QuestionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/javarush/vasilev/quest/controller/QuestServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/javarush/vasilev/quest/controller/QuestServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,28 +57,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GameEngine.executor": "Debug",
-    "Application.Test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 9.0.89-2.executor": "Run",
-    "Tomcat Server.Tomcat 9.0.89.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/dev/java/javarush/hw/hippodrome",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GameEngine.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuestServletTest.doGet.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.89-2.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.89.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dev/java/javarush/hw/hippodrome&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -86,7 +88,7 @@
       <recent name="ru.javarush.vasilev.quest.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.89">
+  <component name="RunManager" selected="JUnit.QuestServletTest.doGet">
     <configuration name="GameEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.javarush.vasilev.quest.engine.GameEngine" />
       <module name="quest" />
@@ -96,6 +98,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestServletTest.doGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.javarush.vasilev.quest.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.javarush.vasilev.quest.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.javarush.vasilev.quest.controller.QuestServletTest" />
+      <option name="METHOD_NAME" value="doGet" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,10 +207,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.GameEngine" />
+      <item itemvalue="JUnit.QuestServletTest.doGet" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.89" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestServletTest.doGet" />
         <item itemvalue="Application.GameEngine" />
       </list>
     </recent_temporary>
@@ -231,6 +251,8 @@
       <workItem from="1717581979671" duration="808000" />
       <workItem from="1717664793062" duration="1203000" />
       <workItem from="1717669433516" duration="1806000" />
+      <workItem from="1717726843295" duration="5614000" />
+      <workItem from="1717753058086" duration="5680000" />
     </task>
     <servers />
   </component>

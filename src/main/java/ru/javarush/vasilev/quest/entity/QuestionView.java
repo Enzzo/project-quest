@@ -15,7 +15,7 @@ import java.util.List;
 public class QuestionView{
     private String question = new String();
     private List<Answer> answers = new ArrayList<Answer>();
-    private ViewType type;
+    private ViewType type = ViewType.NEXT;
 
     public ViewType getType() {
         return type;

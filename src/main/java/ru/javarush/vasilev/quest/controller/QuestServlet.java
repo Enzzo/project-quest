@@ -24,7 +24,6 @@ public class QuestServlet extends HttpServlet {
         String name = request.getParameter("name");
         String param = request.getParameter("game");
         String idx = request.getParameter("idx");
-        String invalidate = request.getParameter("invalidate");
 
         if(!StringUtils.isBlank(name)) {
             session.setUserName(name);
