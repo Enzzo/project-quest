@@ -7,10 +7,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -45,13 +42,14 @@ class QuestServletTest {
         when(request.getSession()).thenReturn(session);
         when(request.getServletContext()).thenReturn(servletContext);
         when(servletConfig.getServletContext()).thenReturn(servletContext);
-        when(request.getRequestDispatcher(anyString())).thenReturn(requestDispatcher);
+        when(servletContext.getRequestDispatcher(anyString())).thenReturn(requestDispatcher);
 
         servlet.init(servletConfig);
     }
 
     @Test
     void doGetTest() throws IOException, ServletException {
+
         servlet.doGet(request, response);
         requestDispatcher.forward(request, response);
         verify(request, times(3)).getParameter(Mockito.anyString());

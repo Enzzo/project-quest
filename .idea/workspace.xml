@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e1b7840f-d024-40e7-af9c-099d78dc5929" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/controller/QuestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/QuestionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/javarush/vasilev/quest/entity/QuestionView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/javarush/vasilev/quest/controller/QuestServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/javarush/vasilev/quest/controller/QuestServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +250,9 @@
       <workItem from="1717664793062" duration="1203000" />
       <workItem from="1717669433516" duration="1806000" />
       <workItem from="1717726843295" duration="5614000" />
-      <workItem from="1717753058086" duration="5680000" />
+      <workItem from="1717753058086" duration="6114000" />
+      <workItem from="1717764763791" duration="1224000" />
+      <workItem from="1717765997694" duration="206000" />
     </task>
     <servers />
   </component>
