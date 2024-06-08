@@ -52,6 +52,8 @@ class QuestServletTest {
 
         servlet.doGet(request, response);
         requestDispatcher.forward(request, response);
+
         verify(request, times(3)).getParameter(Mockito.anyString());
+        verify(request, times(4)).setAttribute(Mockito.anyString(), Mockito.any());
     }
 }
